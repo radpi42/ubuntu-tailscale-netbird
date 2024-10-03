@@ -62,6 +62,7 @@ tailscale up
 ```bash
 netbird up
 ```
+If shows **not found** please wait for one minuite and try again . 
 You will receive an authorization link for both. Simply open them in your browser and authenticate. ✅
 
 BOOM! You're ready to go! 🎉
