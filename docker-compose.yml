@@ -1,0 +1,18 @@
+networks:
+  ubuntu-tailscale-netbird:
+    name: ubuntu-tailscale-netbird
+    driver: bridge
+
+services:
+  ubuntu-tailscale-netbird:
+    image: zahirrayhanjhon/ubuntu-tailscale-netbird:latest
+    container_name: ubuntu-tailscale-netbird
+    networks:
+      - ubuntu-tailscale-netbird
+    privileged: true
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    environment:
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    stdin_open: true
+    tty: true
